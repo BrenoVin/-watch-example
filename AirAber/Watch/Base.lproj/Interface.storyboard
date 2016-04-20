@@ -63,7 +63,7 @@
             <objects>
                 <controller identifier="CheckIn" id="cPL-BA-Q6Q" customClass="CheckInInterfaceController" customModule="Watch_Extension">
                     <items>
-                        <group width="1" height="1" alignment="center" contentMode="center" layout="vertical" id="Aib-vg-pwK">
+                        <group width="1" height="1" alignment="center" verticalAlignment="center" contentMode="center" layout="vertical" id="Aib-vg-pwK">
                             <items>
                                 <group height="30" alignment="center" spacing="4" id="Wmc-wU-xzn">
                                     <items>
@@ -98,7 +98,33 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="603" y="877"/>
+            <point key="canvasLocation" x="616" y="792"/>
+        </scene>
+        <!--BoardingPass-->
+        <scene sceneID="xer-xe-b9V">
+            <objects>
+                <controller identifier="BoardingPass" id="dzr-sK-hhk" customClass="BoardingPassInterfaceController" customModule="Watch_Extension">
+                    <items>
+                        <group height="30" alignment="center" spacing="4" id="R5z-lq-tEv">
+                            <items>
+                                <label alignment="left" verticalAlignment="center" text="SFO" id="D3B-M3-92m"/>
+                                <imageView width="24" height="20" alignment="left" verticalAlignment="center" image="Plane" id="e8Y-J4-aJY">
+                                    <color key="tintColor" red="0.98039215690000003" green="0.066666666669999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </imageView>
+                                <label alignment="left" verticalAlignment="center" text="MAN" id="ug5-Zn-Vyc"/>
+                            </items>
+                        </group>
+                        <imageView width="66" height="66" alignment="center" verticalAlignment="center" image="Activity" animationDuration="1" id="MpH-fO-6JH"/>
+                    </items>
+                    <edgeInsets key="margins" left="1" right="1" top="6" bottom="0.0"/>
+                    <connections>
+                        <outlet property="boardingPassImage" destination="MpH-fO-6JH" id="wmb-0y-ft4"/>
+                        <outlet property="destinationLabel" destination="ug5-Zn-Vyc" id="klv-B1-1KZ"/>
+                        <outlet property="originLabel" destination="D3B-M3-92m" id="LnV-Hy-RTu"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="942" y="793"/>
         </scene>
         <!--Air Aber-->
         <scene sceneID="RaG-W5-PsK">
